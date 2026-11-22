@@ -1,104 +1,411 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Jovy A. Jamandre | Portfolio</title>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jamandre Aquino Jovy | Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
-<nav class="navbar">
-<a class="logo" href="#home">JAJ.</a>
-<button id="menu-toggle">☰</button>
-<div id="nav-links">
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
-</div>
-</nav>
-</header>
+    <!-- NAVIGATION -->
+    <header>
+        <nav class="navbar">
 
-<main>
-<section id="home" class="hero">
-<div class="hero-text">
-<p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
-<h1>Hello, I'm <span>Jovy A. Jamandre</span></h1>
-<h3>Student · Learner · Future IT Professional</h3>
-<p>I'm a hardworking student eager to learn and grow. Dedicated and honest in all work.</p>
-<p class="loc">📍 Comon, Aritao, Nueva Vizcaya, Philippines</p>
-<div class="btns">
-<a href="#projects" class="btn btn1">View My Projects</a>
-<a href="#contact" class="btn btn2">Contact Me</a>
-</div>
-</div>
-<div class="hero-img">
-<img src="images/profile.jpg" alt="portrait of Jovy Jamandre"
-class="profile-img">
-<p class="caption">One lesson, one chapter, one step closer.</p>
-</div>
-</section>
+            <a class="logo" href="#home">JAJ.</a>
 
-<section id="about" class="sec">
-<h2>About Me</h2>
-<p class="bio">Dedicated student who values honesty and hardwork. Focused on learning new skills to build a better future.</p>
-<div class="grid3">
-<div class="card"><h3>🎓 Education</h3><p>Currently pursuing BS in Information Technology at Nueva Vizcaya State University.</p><small>Expected graduation: 2028</small></div>
-<div class="card"><h3>🎯 Career Goals</h3><p>Build a stable career and support my family through dedication and continuous learning.</p></div>
-<div class="card"><h3>💡 Interests</h3><p>Cooking, online selling, business, technology.</p></div>
-</div>
-</section>
+            <button id="menu-toggle" type="button">☰</button>
 
-<section id="skills" class="sec">
-<h2>My Skills</h2>
-<div class="grid2">
-<div class="card"><h3>💻 Technical Skills</h3><p>Basic HTML and CSS, computer fundamentals, and Microsoft Office.</p></div>
-<div class="card"><h3>⌨️ Programming</h3><p>HTML and CSS (beginner); currently developing my web development skills.</p></div>
-<div class="card"><h3>🛠️ Tools</h3><p>Visual Studio Code and GitHub.</p></div>
-<div class="card"><h3>🤝 Soft Skills</h3><p>Communication, Teamwork, Time Management, Positive Attitude</p></div>
-</div>
-</section>
+            <div id="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
 
-<section id="projects" class="sec">
-<h2>My Projects</h2>
-<div class="grid3">
-<div class="card proj"><div class="art">HTML + CSS</div><h3>Personal Portfolio Website</h3><p>My portfolio website made with light blue and pink theme.</p><span>HTML</span><span>CSS</span><span>JS</span></div>
-<div class="card proj"><div class="art art2">✦ DESIGN</div><h3>Creative Web Page</h3><p>A practice page to explore layout and colors.</p></div>
-<div class="card proj"><div class="art art3">{ } CODE</div><h3>Learning Projects</h3><p>Small exercises while learning web technologies.</p></div>
-</div>
-<div class="github-box">
-<div><h3>My GitHub</h3><p>github.com/jovyjamandre3</p></div>
-<a href="https://github.com/jovyjamandre3-sketch" target="_blank" class="btn btn2">Visit GitHub ↗</a>
-</div>
-</section>
+        </nav>
+    </header>
 
-<section id="contact" class="sec">
-<h2>Contact Me</h2>
-<div class="contact-wrap">
-<div class="card">
-<p><b>Email:</b><br><a href="mailto:jovyjamandre3@gmail.com">jovyjamandre3@gmail.com</a></p><br>
-<p><b>Location:</b><br>Comon,Aritao,Nueva Vizcaya</p><br>
-<a href="https://github.com/jovyjamandre3-sketch/jovyjamandre3-sketch.github.io" target="_blank"> class=btn btn2">Visit Github</a>
-</div>
-<form id="contact-form" class="card">
-<input type="text" id="name" placeholder="Your name" required>
-<input type="email" id="email" placeholder="Your email" required>
-<textarea id="message" rows="5" placeholder="Your message" required></textarea>
-<button type="submit" class="btn btn1">Send Message ↗</button>
-<p id="form-status">This will open your email app.</p>
-</form>
-</div>
-</section>
+    <main>
 
-</main>
+        <!-- HOME SECTION -->
+        <section id="home" class="hero">
 
-<footer>© <span id="year"></span> Jovy A. Jamandre - Designed with care</footer>
-<button id="topBtn">↑</button>
-<script src="script.js"></script>
+            <div class="hero-text">
+
+                <p class="eyebrow">
+                    WELCOME TO MY PORTFOLIO
+                </p>
+
+                <h1>
+                    Hello, I'm
+                    <span>Jamandre Aquino Jovy</span>
+                </h1>
+
+                <h3>Student · Learner · Future IT Professional</h3>
+
+                <p>
+                    I'm a hardworking student eager to learn and grow.
+                    Dedicated and honest in everything I do.
+                </p>
+
+                <p class="loc">
+                    📍 Comon, Aritao, Nueva Vizcaya, Philippines
+                </p>
+
+                <div class="btns">
+
+                    <a href="#projects" class="btn btn1">
+                        View My Projects
+                    </a>
+
+                    <a href="#contact" class="btn btn2">
+                        Contact Me
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-img">
+
+                <img
+                    src="images/profile.jpg"
+                    alt="Profile of Jamandre Aquino Jovy"
+                    class="profile-img"
+                >
+
+                <p class="caption">
+                    One lesson, one chapter, one step closer.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ABOUT SECTION -->
+        <section id="about" class="sec">
+
+            <h2>About Me</h2>
+
+            <p class="bio">
+                I am a dedicated student who values honesty and hard work.
+                I am focused on learning new skills and improving my
+                knowledge to build a better future.
+            </p>
+
+            <div class="grid3">
+
+                <div class="card">
+
+                    <h3>🎓 Education</h3>
+
+                    <p>
+                        Currently pursuing a Bachelor of Science in
+                        Information Technology at Nueva Vizcaya
+                        State University.
+                    </p>
+
+                    <small>Expected Graduation: n/a</small>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>🎯 Career Goals</h3>
+
+                    <p>
+                        My goal is to build a successful career
+                        in the technology field through dedication
+                        and continuous learning.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>💡 Interests</h3>
+
+                    <p>
+                        Cooking, online selling, business,
+                        computers, and technology.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SKILLS SECTION -->
+        <section id="skills" class="sec">
+
+            <h2>My Skills</h2>
+
+            <div class="grid2">
+
+                <div class="card">
+
+                    <h3>💻 Technical Skills</h3>
+
+                    <p>
+                        Basic HTML and CSS, computer fundamentals,
+                        and Microsoft Office.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>⌨️ Programming</h3>
+
+                    <p>
+                        HTML and CSS (Beginner).
+                        Currently developing my web development skills.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>🛠️ Tools</h3>
+
+                    <p>
+                        Visual Studio Code and GitHub.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <h3>🤝 Soft Skills</h3>
+
+                    <p>
+                        Communication, teamwork, time management,
+                        and positive attitude.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJECTS SECTION -->
+        <section id="projects" class="sec">
+
+            <h2>My Projects</h2>
+
+            <div class="projects-container">
+
+                <!-- PROJECT 1 -->
+                <a href="#home" class="card proj project-link">
+
+                    <div class="art">
+                        HTML + CSS
+                    </div>
+
+                    <h3>Personal Portfolio Website</h3>
+
+                    <p>
+                        My personal portfolio website showcasing
+                        my background, skills, education, and projects.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+
+                    </div>
+
+                    <p class="click-hint">
+                        Click to return to Home ↑
+                    </p>
+
+                </a>
+
+
+                <!-- PROJECT 2 -->
+                <a
+                    href="https://jovyjamandre3-sketch.github.io/My-Daily-Planner/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="card proj project-link"
+                >
+
+                    <div class="art">
+                        📅 DAILY PLANNER
+                    </div>
+
+                    <h3>My Daily Planner</h3>
+
+                    <p>
+                        A daily planner application designed to help
+                        users organize their tasks, manage activities,
+                        and keep track of their daily schedules.
+                    </p>
+
+                    <div class="project-tags">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Firebase</span>
+
+                    </div>
+
+                    <p class="click-hint">
+                        Click to Visit My Daily Planner ↗
+                    </p>
+
+                </a>
+
+            </div>
+
+
+            <!-- GITHUB SECTION -->
+            <div class="github-box">
+
+                <div>
+
+                    <h3>My GitHub</h3>
+
+                    <p>
+                        <a
+                            href="https://github.com/jovyjamandre3-sketch"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            github.com/jovyjamandre3-sketch
+                        </a>
+                    </p>
+
+                </div>
+
+                <a
+                    href="https://github.com/jovyjamandre3-sketch"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn2"
+                >
+                    Visit GitHub ↗
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT SECTION -->
+        <section id="contact" class="sec">
+
+            <h2>Contact Me</h2>
+
+            <div class="contact-wrap">
+
+                <!-- CONTACT INFORMATION -->
+                <div class="card">
+
+                    <p>
+                        <b>Email:</b><br>
+
+                        <a href="mailto:jovyjamandre3@gmail.com">
+                            jovyjamandre3@gmail.com
+                        </a>
+                    </p>
+
+                    <br>
+
+                    <p>
+                        <b>Location:</b><br>
+                        Comon, Aritao, Nueva Vizcaya
+                    </p>
+
+                    <br>
+
+                    <p>
+                        <b>GitHub:</b><br>
+
+                        <a
+                            href="https://github.com/jovyjamandre3-sketch"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            github.com/jovyjamandre3-sketch
+                        </a>
+                    </p>
+
+                </div>
+
+
+                <!-- CONTACT FORM -->
+                <form id="contact-form" class="card">
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Your name"
+                        required
+                    >
+
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Your email"
+                        required
+                    >
+
+                    <textarea
+                        id="message"
+                        rows="5"
+                        placeholder="Your message"
+                        required
+                    ></textarea>
+
+                    <button type="submit" class="btn btn1">
+                        Send Message ↗
+                    </button>
+
+                    <p id="form-status">
+                        This will open your email app.
+                    </p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        © <span id="year"></span>
+        Jamandre Aquino Jovy - Designed with care
+
+    </footer>
+
+
+    <!-- BACK TO TOP BUTTON -->
+    <button id="topBtn" type="button">
+        ↑
+    </button>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
 </body>
 </html>
-Compose
-Write to Jamandre Aquino Jovy
